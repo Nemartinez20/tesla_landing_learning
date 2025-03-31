@@ -36,17 +36,32 @@ import Layout from "../layouts/Layout.astro";
     </header>
 
     <section
-      class="bg-black h-screen w-screen text-center relative overflow-hidden border border-amber-200 flex flex-col justify-between"
+      class="bg-black h-screen w-screen text-center relative overflow-hidden"
     >
-      <div class="z-25 relative">
-        <h2 class="text-white pt-40 text-[40px]">Disfrute de Tesla</h2>
-        <p class="text-white">Programa una prueba de conducionhoy mismo</p>
+      <div class="relative z-25 h-full flex flex-col">
+        <div class="">
+          <h2 class="text-white pt-40 text-[40px]">Disfrute de Tesla</h2>
+          <p class="text-white">Programa una prueba de conducionhoy mismo</p>
+        </div>
+        <footer class="text-white mb-20 flex flex-col flex-grow justify-end">
+          <div>
+            <a
+              class="border-[2px] border-white bg-white/5 backdrop-blur-sm inline-block w-[300px] text-center rounded px-6 py-2
+              hover:text-black transition-colors hover:bg-white"
+              href=""
+            >
+              Prueba de conducción
+            </a>
+          </div>
+        </footer>
       </div>
-      <footer class="z-25 relative text-white mb-20">
-        <a href=""> Prueba de conduccion </a>
-      </footer>
-      <div class="absolute top-0 bottom-0">
-        <video src="/video.webm" autoplay loop muted></video>
+      <div class="absolute top-0 bottom-0 h-fullñ w-full">
+        <video
+          class="object-cover object-center h-full w-full"
+          src="/video.webm"
+          autoplay
+          loop
+          muted></video>
       </div>
     </section>
   </main>
