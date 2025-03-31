@@ -3,6 +3,7 @@ import LandingHeader from "../components/LandingHeader.astro";
 import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 import ChargeSection from "../components/ChargeSection.astro";
+import Section from "../components/Section.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -13,9 +14,57 @@ import ChargeSection from "../components/ChargeSection.astro";
   <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
     <div class="snap-center">
       <HeroSection />
-    </div>>
-    <div class="snap-center">
+    </div>
+    <!-- <div class="snap-center">
       <ChargeSection />
-    </div>>
+    </div>> -->
+    <div class="snap-center">
+      <Section
+        color="black"
+        titleSection="Model Y"
+        subtitle="Concertar una prueba de conducción"
+        btnuno="Explorar Inventario"
+        btndos="Pedido Personalizado"
+      >
+        <img
+          slot="background"
+          class="h-full w-full object-cover object-center"
+          src="/model-y.avif"
+          alt="modelo-y"
+        />
+      </Section>
+    </div>
+    <div class="snap-center">
+      <Section
+        color="black"
+        titleSection="Model 3"
+        subtitle="Programa una prueba de conducion hoy mismo"
+        btnuno="contato"
+        btndos="otro"
+      >
+        <img
+          slot="background"
+          class="h-full w-full object-cover object-center"
+          src="/model-3.avif"
+          alt="modelo-3"
+        />
+      </Section>
+    </div>
+    <div class="snap-center">
+      <Section
+        color="black"
+        titleSection="Model S"
+        subtitle="Programa una prueba de conducion hoy mismo"
+        btnuno="contato"
+        btndos="otro"
+      >
+        <img
+          slot="background"
+          class="h-full w-full object-cover object-center"
+          src="/model-s.avif"
+          alt="modelo-y"
+        />
+      </Section>
+    </div>
   </main>
 </Layout>
