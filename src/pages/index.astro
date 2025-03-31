@@ -1,68 +1,17 @@
 ---
-import Logo from "../components/Logo.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+import HeroSection from "../components/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-  <main>
-    <header
-      class="flex py-3 px-9 items-center fixed w-full justify-between z-20 text-white"
-    >
-      <div>
-        <Logo />
-      </div>
-      <nav>
-        <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li><a href="#">Model S</a></li>
-          <li><a href="#">Model 3</a></li>
-          <li><a href="#">Model X</a></li>
-          <li><a href="#">Model Y</a></li>
-          <li><a href="#">Powereall</a></li>
-          <li><a href="#">Carga Y</a></li>
-        </ul>
-      </nav>
-
-      <nav>
-        <ul class="flex [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li><a href="#">Soporte</a></li>
-          <li><a href="#">Tienda</a></li>
-          <li><a href="#">Cuenta</a></li>
-          <li><a href="#">Menù</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section
-      class="bg-black h-screen w-screen text-center relative overflow-hidden"
-    >
-      <div class="relative z-25 h-full flex flex-col">
-        <div class="">
-          <h2 class="text-white pt-40 text-[40px]">Disfrute de Tesla</h2>
-          <p class="text-white">Programa una prueba de conducionhoy mismo</p>
-        </div>
-        <footer class="text-white mb-20 flex flex-col flex-grow justify-end">
-          <div>
-            <a
-              class="border-[2px] border-white bg-white/5 backdrop-blur-sm inline-block w-[300px] text-center rounded px-6 py-2
-              hover:text-black transition-colors hover:bg-white"
-              href=""
-            >
-              Prueba de conducción
-            </a>
-          </div>
-        </footer>
-      </div>
-      <div class="absolute top-0 bottom-0 h-fullñ w-full">
-        <video
-          class="object-cover object-center h-full w-full"
-          src="/video.webm"
-          autoplay
-          loop
-          muted></video>
-      </div>
-    </section>
+<Layout title="Tesla">
+  <LandingHeader />
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+    <div class="snap-center">
+      <HeroSection />
+    </div>>
   </main>
 </Layout>
